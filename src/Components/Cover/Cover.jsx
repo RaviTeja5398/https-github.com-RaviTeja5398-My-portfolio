@@ -2,6 +2,7 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 import "./Cover.css";
 import sisiImg from "../../assets/sisi_tarak.png";
+import resume from "../../assets/resume/Resume.pdf";
 
 const Cover = () => {
   return (
@@ -40,14 +41,9 @@ const Cover = () => {
               <i className="fa-brands fa-instagram"></i>
             </Link>
           </div>
-          <button
-            to="Add your Resume"
-            target="_blank"
-            download
-            className="button my-3"
-          >
-            Download Resume🫠
-          </button>
+          <a href={resume} download="resume.pdf">
+            <button className="button my-3">Download Resume🫠</button>
+          </a>
         </div>
         <div className="col-12 col-lg-4 offset-lg-1 text-center order-1 order-lg-2 py-5">
           <img src={sisiImg} alt="sisi_tarak" className="img-fluid" />
