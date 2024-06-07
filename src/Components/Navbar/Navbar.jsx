@@ -4,9 +4,9 @@ import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg fixed-top">
+    <nav className="navbar navbar-expand-lg fixed-top" id="navbar">
       <div className="container my-2 pl-5">
-        <Link to="/" className="navbar-brand headerLink">
+        <Link to="/" className="navbar-brand" id="headerLink">
           sisi_tarak
         </Link>
 
@@ -15,23 +15,23 @@ const Navbar = () => {
           data-bs-toggle="collapse"
           data-bs-target="#collapseNav"
         >
-          <span className="fa-solid fa-bars ham-menu"></span>
+          <span className="fa-solid fa-bars ham-menu" id="ham-menu"></span>
         </button>
         <div className="collapse navbar-collapse flex-grow-0" id="collapseNav">
           <div className="navbar-nav font-weight-normal text-center">
-            <Link to="/" className="navLink nav-link mx-1 active">
+            <Link to="/" className="nav-link mx-1 active" id="navLink">
               Home
             </Link>
-            <Link to="/about" className="navLink nav-link mx-2">
+            <Link to="/about" className="nav-link mx-2" id="navLink">
               About
             </Link>
-            <Link to="/skills" className="navLink nav-link mx-2">
+            <Link to="/skills" className="nav-link mx-2" id="navLink">
               Skills
             </Link>
-            <Link to="/projects" className="navLink nav-link mx-2">
+            <Link to="/projects" className="nav-link mx-2" id="navLink">
               Projects
             </Link>
-            <Link to="/contact" className="navLink nav-link mx-2">
+            <Link to="/contact" className="nav-link mx-2" id="navLink">
               Contact
             </Link>
           </div>

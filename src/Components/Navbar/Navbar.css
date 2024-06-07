@@ -1,37 +1,48 @@
-a.active {
-  color: var(--main-color) !important;
+#navbar {
+  font-family: var(--syneFont);
 }
 
-.navbar {
-  background: var(--bg-color) !important;
+#navbar {
+  background: transparent;
 }
 
-.headerLink {
-  font-size: 1.8rem !important;
-  font-weight: 600 !important;
-  color: var(--text-color) !important;
-}
-
-.headerLink:hover {
-  color: var(--main-color) !important;
+#headerLink {
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: var(--text-color);
   transition: all 0.5s;
 }
 
-.navLink {
-  font-weight: 400 !important;
-  color: var(--text-color) !important;
+#headerLink:hover {
+  color: var(--main-color);
+  letter-spacing: 2px;
 }
 
-.navLink:hover {
-  color: var(--main-color) !important;
+#navLink {
+  font-weight: 400;
+  font-size: 1.1rem;
+  letter-spacing: 1.5px;
+  color: var(--text-color);
+}
+
+#navLink:hover {
+  color: var(--main-color);
+  letter-spacing: -1px;
+  transform: scale(1.05);
   transition: all 0.5s;
 }
 
-.ham-menu {
-  color: var(--text-color) !important;
+.navbar-nav .navbar-toggler.active,
+.navbar-nav #navLink.active {
+  color: var(--main-color) !important;
 }
 
-.ham-menu:hover {
-  color: var(--main-color) !important;
+#ham-menu {
+  color: var(--text-color);
+}
+
+#ham-menu:hover {
+  color: var(--main-color);
   transition: all 0.5s;
 }
