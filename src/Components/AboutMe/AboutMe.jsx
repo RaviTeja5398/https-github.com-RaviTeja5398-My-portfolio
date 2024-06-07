@@ -1,6 +1,7 @@
 import React from "react";
 import "./AboutMe.css";
 import sisiImg2 from "../../assets/sisi_tarakk.jpg";
+import { Link } from "react-router-dom";
 
 const AboutMe = () => {
   return (
@@ -36,9 +37,9 @@ const AboutMe = () => {
               skills and make meaningful contributions to projects. Let's work
               together!
             </p>
-            <button href="#" className="button mt-3 mb-4">
-              Read More...😉
-            </button>
+            <Link to="/about">
+              <button className="button mt-3 mb-4">Read More...😉</button>
+            </Link>
           </div>
         </div>
       </div>
