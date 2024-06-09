@@ -4,6 +4,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -15,20 +19,41 @@
 }
 
 :root {
-  --bg-color: #1f242d;
-  --second-bg-color: #323946;
-  --text-color: #fff;
+  --bg-color: #10151d;
+  --head-color: #d9dfe7;
+  --text-color: #8b98a9;
   --main-color: #0ef;
-  --poppinsFont: "Poppins", sans-serif;
-  --cutiveFont: "Cutive Mono", monospace;
-  --syneFont: "Syne Mono", monospace;
+  --dotColor: #33384f;
+  --poppins-font: "Poppins", sans-serif;
+  --cutive-font: "Cutive Mono", monospace;
+  --syne-font: "Syne Mono", monospace;
+  --jetbrains-font: "Jet Brains", monospace;
+  --oxygen-font: "Oxygen Mono", monospace;
 }
 
 .body {
-  margin: 0;
-  place-items: center;
+  position: relative;
   background: var(--bg-color);
-  color: var(--text-color);
+  color: var(--head-color);
+  min-height: 100vh;
+}
+
+.body::after {
+  content: "";
+  background-image: -webkit-radial-gradient(
+    circle,
+    var(--dotColor) 1.5px,
+    transparent 0
+  );
+  opacity: 0.5;
+  background-size: 48px 64px;
+  background-position: 100% 0;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
 }
 
 h6 {
